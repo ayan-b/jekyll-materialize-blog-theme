@@ -1,0 +1,31 @@
+---
+layout: default
+---
+{% include share_bar.html %}
+  <div class="container">
+    <h3 class="post-title col s2 m2 l2" itemprop="name headline">{{ page.title | escape }}</h3>
+    <div class="post row">
+        {% if page.intro_pic %}
+            <div class = "image" style="text-align:center">
+                <img src = "{{ page.intro_pic }}" alt="Smiley face" height=auto width=auto>
+            </div>
+        {% endif %}
+        <div class="post-meta col l2">
+            {% if page.author %}
+                <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                    <span itemprop="name" class="author_name">{{ page.author }}</span>
+                </span>
+            {% endif %}
+            <br>
+            <div class="time_published">
+                <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                    {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                    Published {{ page.date | date: date_format }}
+                </time>
+            </div>
+        </div>
+        <div class="post-content container col s12 m12 l8" itemprop="articleBody">
+            {{ content }}
+        </div>
+   </div>
+</div>

@@ -21,12 +21,19 @@ baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://ayan-b.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ayanbn7
 github_username:  ayan-b
+linkedin_username:  ayanb
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+kramdown:
+  input: GFM
+
+# Google Analytics
+gtag_id: "UA-120952687-1"
+gdpr_msg: "This site uses Google Analytics. Please review their privacy policy"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

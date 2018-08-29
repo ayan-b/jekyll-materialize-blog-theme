@@ -1,0 +1,47 @@
+body {
+    color: #202124;
+    cursor: auto;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.444;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    letter-spacing: .25px;
+    text-align: left;
+}
+
+.time_published {
+    color: #757575;
+    font-size: .75em;
+    line-height: 22px;
+}
+
+.author_name {
+    font-weight: 500;
+}
+
+.share-button {
+    font-size: 1.5em;
+    padding: 0.2em;
+    color: #202124;
+}
+@media only screen and (min-width: 768px) {
+    .share-bar{
+        top: 90%;
+        left: 10%;
+        display: inline-block;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .share-bar{
+        top: 40%;
+        left: 85%;
+        position: fixed;
+    }
+    .share-button{
+        display: block;
+    }
+}
+
