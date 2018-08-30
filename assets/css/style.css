@@ -12,6 +12,18 @@ body {
     text-align: left;
 }
 
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+
+a { 
+    color: inherit; 
+} 
+
 .time_published {
     color: #757575;
     font-size: .75em;
@@ -54,4 +66,13 @@ body {
     position: relative;
     height: 10em;
     /* width: 12em; */
+}
+
+.post-title{
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.small-image{
+    height: 105.75;
+    width: auto;
 }

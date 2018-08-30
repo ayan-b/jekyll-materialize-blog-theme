@@ -1,27 +1,33 @@
 <div class="row">
+  {% for post in site.categories.infocus %}
+    {% include infocus.html %}
+  {% endfor %}
+  {% for post in site.categories.top_posts %}
+    {% include top_posts.html %}
+  {% endfor %}
+  <h4 class="header" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">All Posts</h3>
+  <hr>
     {% for post in site.posts %}
-       <!-- <div class="container-fluid z-depth-2 hoverable">
-           <h4 style="padding:1%">{{post.title}}</h4>
-           <p style="padding:1%">{{post.excerpt}}</p>
-           <img class="post_image" src="{{post.intro_pic}}" alt="{{post.title}}">
-       </div> -->
-
-       <div class="col s12 m12 l12">
-            <div class="card horizontal">
-              <div class="card-image hide-on-med-and-down">
-                <img class="post-image" src="{{post.intro_pic}}">
-              </div>
-              <div class="card-stacked">
-                <div class="card-content">
-                  <span class="card-title">{{post.title}}</span>
-                  <p>{{post.excerpt}}</p>
-                </div>
-                <div class="card-action">
-                  <a href="{{ post.url | relative_url }}">Read More</a>
-                </div>
-              </div>
-            </div>
+    <a href = "{{ post.url | relative_url }}">
+      <div class="row">
+        <div class="col l8">
+          <header class="time_published">
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                Published {{ post.date | date: date_format }}
+            </time>
+          </header>
+          <h4 class="post-title">{{ post.title }}</h4>
+          <p class="post-excerpt">{{ post.excerpt }}</p>
           </div>
+          <div class="col l2">
+            <figure class="hide-on-med-and-down">
+                <img src='{{post.intro_pic}}' style="object-fit: cover; height: 105.75px; width: 188px;">
+            </figure>
+          </div>
+        </div>
+        <hr>
+      </a>
     {% endfor %}
 </div>
       
