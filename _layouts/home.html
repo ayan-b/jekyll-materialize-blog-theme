@@ -1,26 +1,19 @@
 {% include header.html %}
-
+{% include navbar.html %}
   <div id="home" class="section scrollspy">
-  <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">{{ site.title }}</h1>
         <div class="row center">
           <h5 class="header col s12 light">{{ site.description }}</h5>
         </div>
-        <br><br>
-
-      </div>
     </div>
   </div>
 </div>
 
 <div class="container" style="padding:20px;">
   <div id="blog" class="section scrollspy">
-  <h3 style="text-align:center;">Blog</h3>
   {% include blog-feed.html %}
+  </div>
+  <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 </div>
-</div>
-
 {% include footer.html %}

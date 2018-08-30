@@ -45,3 +45,13 @@ body {
     }
 }
 
+.card-title {
+    font-weight: 500;
+}
+
+.post-image{
+    display: block;
+    position: relative;
+    height: 10em;
+    /* width: 12em; */
+}
