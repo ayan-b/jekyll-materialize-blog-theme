@@ -4,24 +4,35 @@
 <script type="text/javascript" src="{{site.baseurl}}/assets/materialize/js/materialize.min.js"></script>
 </body>
 </html>
-<footer class="page-footer black">
+<footer class="page-footer black-text" style="background-color: rgba(0,0,0,.08);">
     <div class="container">
         <div class="row">
-        <div class="col l6 s12">
-            <h5 class="white-text">{{site.title}}</h5>
-            <p class="grey-text text-lighten-4">{{site.description}}</p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Find me in:</h5>
-            <ul>
-            </ul>
-        </div>
+            <div class="name col l4 s12">
+                <ul class="contact-list">
+                    <li class="p-name">
+                        <h5 class=>{{site.title}}</h5>
+                        {%- if site.author -%}
+                        {{ site.author | escape }}
+                        {%- endif -%}
+                        </li>
+                        {%- if site.email -%}
+                        <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+                        {%- endif -%}
+                  </ul>
+            </div>
+            <div class="col l4 s12">
+                <h5>Find me in:</h5>
+                {% include social.html %}
+            </div>
+            <div class="col l4 s12">
+                <p class="text-lighten-4">{{site.description}}</p>
+            </div>
         </div>
     </div>
-    <div class="footer-copyright">
+    <div class="footer-copyright black-text">
         <div class="container">
-        © 2018 Ayan Banerjee
-        <a class="grey-text text-lighten-4 right" href="{{site.base_url}}">Home</a>
+        © 2018
+        <a class="text-lighten-4 right" href="{{site.base_url}}">Home</a>
         </div>
     </div>
 </footer>

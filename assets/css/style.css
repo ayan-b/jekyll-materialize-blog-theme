@@ -76,3 +76,8 @@ a {
     height: 105.75;
     width: auto;
 }
+
+.svg-icon{
+    width: 21px;
+    height: 16px;
+}
