@@ -1,16 +1,29 @@
 <div class="row">
+    <h2 class="header" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+        Infocus
+    </h2>
+    <hr>
   {% for post in site.categories.infocus %}
     {% include infocus.html %}
   {% endfor %}
+  <h4 class="header" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+    Top Posts
+  </h4>
+  <hr>
+<div class="top-posts col s12 m12 l12">
   {% for post in site.categories.top_posts %}
+  <div class="col s12 m6 l4">
     {% include top_posts.html %}
+  </div>
   {% endfor %}
+</div>
+<div class="all-posts">
   <h4 class="header" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">All Posts</h3>
   <hr>
     {% for post in site.posts %}
     <a href = "{{ post.url | relative_url }}">
       <div class="row">
-        <div class="col l8">
+        <div class="col l9">
           <header class="time_published">
             <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
                 {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
@@ -29,5 +42,6 @@
         <hr>
       </a>
     {% endfor %}
+    </div>
 </div>
       
