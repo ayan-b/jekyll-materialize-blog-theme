@@ -6,7 +6,7 @@
             <div class="card-image">
               <img src="{{post.intro_pic}}" style="object-fit: cover; height: 150px; width: 296px" class="responsive-img">
               <span class="card-title">{{post.title}}</span>
-              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">chevron_right</i></a>
+              <a href = "{{ post.url | relative_url }}"class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">chevron_right</i></a>
             </div>
             <div class="card-content">
               <p>{{post.excerpt}}</p>
