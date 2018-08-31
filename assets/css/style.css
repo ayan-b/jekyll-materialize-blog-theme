@@ -10,6 +10,13 @@ body {
     word-wrap: break-word;
     letter-spacing: .25px;
     text-align: left;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main{
+    flex: 1 0 auto;
 }
 
 hr {
