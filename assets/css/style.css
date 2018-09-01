@@ -56,7 +56,7 @@ a {
 @media only screen and (min-width: 992px) {
     .share-bar{
         top: 40%;
-        left: 85%;
+        left: 90%;
         position: fixed;
     }
     .share-button{

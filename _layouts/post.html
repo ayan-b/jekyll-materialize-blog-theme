@@ -1,13 +1,12 @@
----
-layout: default
----
+{% include header.html %}
+{% include navbar.html %}
 {% include share_bar.html %}
   <div class="container">
     <h3 class="post-title col s2 m2 l2" itemprop="name headline">{{ page.title | escape }}</h3>
     <div class="post row">
         {% if page.intro_pic %}
             <div class = "image" style="text-align:center">
-                <img src = "{{ page.intro_pic }}" alt="Smiley face" height=auto width=auto>
+                <img src = "{{ page.intro_pic }}" alt="" height=auto width=auto class="responsive-img">
             </div>
         {% endif %}
         <div class="post-meta col l2">
@@ -26,6 +25,18 @@ layout: default
         </div>
         <div class="post-content container col s12 m12 l8" itemprop="articleBody">
             {{ content }}
+            <span>
+                {% for tag in page.tags %}
+                    {% capture tag_name %}{{ tag }}{% endcapture %}
+                        <a href="{{site.baseurl}}/tag/{{ tag_name }}">
+                            <div class="chip">{{ tag_name }}</div>
+                        </a>
+                {% endfor %}
+            </span>
         </div>
    </div>
+   {% if page.tags %}
+       {% include related-posts.html %}
+   {% endif %}
 </div>
+{% include footer.html %}

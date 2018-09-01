@@ -1,5 +1,17 @@
 {% include header.html %}
 {% include navbar.html %}
-  {{content}}
+<div class="container">
+    <h3 class="post-title col s2 m2 l2" itemprop="name headline">{{ page.title | escape }}</h3>
+    <div class="post row">
+        {% if page.intro_pic %}
+            <div class = "image" style="text-align:center">
+                <img src = "{{ page.intro_pic }}" alt="" height=auto width=auto class="responsive-img">
+            </div>
+        {% endif %}
+        <div class="post-content container col s12 m12 l8" itemprop="articleBody">
+            {{ content }}
+        </div>
+   </div>
+</div>
 
 {% include footer.html %}

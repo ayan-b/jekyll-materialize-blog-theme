@@ -1,0 +1,21 @@
+<!-- Credits: Long Qian, Long Qian -->
+{% include header.html %}
+{% include navbar.html %}
+<div class="container">
+<h4 class="header" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">All Tags</h3>
+  <hr>
+{% capture temptags %}
+  {% for tag in site.tags %}
+    {{ tag[1].size | plus: 1000 }}#{{ tag[0] }}#{{ tag[1].size }}
+  {% endfor %}
+{% endcapture %}
+{% assign sortedtemptags = temptags | split:' ' | sort | reverse %}
+{% for temptag in sortedtemptags %}
+  {% assign tagitems = temptag | split: '#' %}
+  {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
+  <div class="chip">
+    <a href="{{site.baseurl}}/tag/{{ tagname }}">{{ tagname }}</a>
+  </div>
+{% endfor %}
+</div>
+{% include footer.html %}
