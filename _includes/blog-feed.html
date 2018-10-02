@@ -31,7 +31,7 @@
             </time>
           </header>
           <h4 class="post-title">{{ post.title }}</h4>
-          <p class="post-excerpt">{{ post.excerpt }}</p>
+          <p class="post-excerpt">{{ post.excerpt | truncatewords: 100 }}</p>
           </div>
           <div class="col l2">
             <figure class="hide-on-med-and-down">

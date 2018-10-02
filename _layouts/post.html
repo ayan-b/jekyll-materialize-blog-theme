@@ -35,7 +35,10 @@
             </span>
         </div>
    </div>
-   {% if page.tags %}
+   {% if page.recommended-posts %}
+      {% include recommended-posts.html %}
+   {% endif %}
+   {% if page.related-posts %}
        {% include related-posts.html %}
    {% endif %}
 </div>
