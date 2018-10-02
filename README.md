@@ -1,8 +1,9 @@
 # AYAN'S BLOG
-This repository is mainatined by [Ayan Banerjee](https://github.com/ayan-b)) for [his blog](https://ayan-b.github.io/blog/).
+This repository is mainatined by [Ayan Banerjee](https://github.com/ayan-b) for [his blog](https://ayan-b.github.io/blog/).
 
 ## Contributions
 All your ideas and innovations are welcomed. Feel free to contribute and add new faetures, we'd be happy!
+Open a issue for any suggestion or bug.
 * Fork the branch
 * Clone the forked repository.
 * Create your feature branch: `git checkout -b my-new-features`.
