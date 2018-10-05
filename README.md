@@ -3,3 +3,4 @@
 
 ## Contributors
 1. [Ayan Banerjee](https://github.com/ayan-b)
+2. [Arnel Clave](https://github.com/clavearnel)
