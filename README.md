@@ -1,5 +1,5 @@
 # blog
-> A jekyll site which is motivated from: https://blog.google
+> A jekyll site.
 
 ## Contributors
 1. [Ayan Banerjee](https://github.com/ayan-b)
