@@ -1,9 +1,15 @@
 </main>
 <script src = "{{site.baseurl}}/assets/js/main.js"></script>
-<script type="text/javascript" src="{{site.baseurl}}/assets/jquery-3.2.1.min.js"></script>
 {% include gdpr.html %}
 <!--JavaScript at end of body for optimized loading-->
+{% if jekyll.environment == "development" %}
+<script type="text/javascript" src="{{site.baseurl}}/assets/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="{{site.baseurl}}/assets/materialize/js/materialize.min.js"></script>
+{% endif %}
+{% if jekyll.environment == "production" %}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+{% endif %}
 
 </body>
 </html>
@@ -39,4 +45,3 @@
         </div>
     </div>
 </footer>
-        
