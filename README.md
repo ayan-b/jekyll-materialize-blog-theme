@@ -1,5 +1,5 @@
 # AYAN'S BLOG
-< This repository is mainatined by [Ayan Banerjee](https://github.com/ayan-b) for [his blog](https://ayan-b.github.io/blog/).<br>
+This repository is mainatined by [Ayan Banerjee](https://github.com/ayan-b) for [his blog](https://ayan-b.github.io/blog/).<br>
 ![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)
 
 ## Contributions
@@ -16,5 +16,5 @@ Open a issue for any suggestion or bug.
 ## Contributors
 1. [Ayan Banerjee](https://github.com/ayan-b)
 2. [Elysia Ong](https://github.com/xevenheaven)
-3. [Salif Moin](https://github.com/salif-04)
+3. [Salif Moin](https://github.com/salif-04)<br>
 ![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)
