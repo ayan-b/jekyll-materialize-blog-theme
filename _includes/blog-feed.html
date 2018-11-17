@@ -1,22 +1,26 @@
 <div class="row">
+  {% if site.categories.infocus %}
     <h2 class="header" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
         Infocus
     </h2>
     <hr>
-  {% for post in site.categories.infocus %}
-    {% include infocus.html %}
-  {% endfor %}
+    {% for post in site.categories.infocus %}
+      {% include infocus.html %}
+    {% endfor %}
   <h4 class="header" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
     Top Posts
   </h4>
   <hr>
-<div class="top-posts col s12 m12 l12">
-  {% for post in site.categories.top_posts %}
-  <div class="col s12 m6 l4">
-    {% include top_posts.html %}
-  </div>
+  {% endif %}
+  {% if site.categories.top_posts %}
+  <div class="top-posts col s12 m12 l12">
+    {% for post in site.categories.top_posts %}
+    <div class="col s12 m6 l4">
+      {% include top_posts.html %}
+    </div>
   {% endfor %}
-</div>
+  </div>
+  {% endif %}
 <div class="all-posts">
   <h4 class="header" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">All Posts</h3>
   <hr>
