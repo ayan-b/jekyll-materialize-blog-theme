@@ -5,7 +5,8 @@ This is a wrapper on the jekyll minima theme. You can use it by cloning the repo
 
 ## Usage
 
-Clone the repo and you are good to go.
+Make sure you have jekyll and minima installed. Then, clone the repo and put it
+on top of current file structure of jekyll.
 
 ## Features
 
