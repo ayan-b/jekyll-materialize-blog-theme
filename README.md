@@ -33,8 +33,3 @@ of your post by matching the tags.
 ## Contributing
 
 Want to contribute? Awesome! Please have a look at our [Contributing](./CONTRIBUTING.md) page.
-
-## Contributors
-
-1. [Ayan Banerjee](https://github.com/ayan-b)
-2. [Elysia Ong](https://github.com/xevenheaven)
