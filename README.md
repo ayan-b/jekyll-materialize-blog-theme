@@ -24,7 +24,7 @@ post and in the home page. Simply add the link of the picture in the front mattt
 - **Related Posts**: If you set `related-post` as true, some posts will be mentioned at the bottom 
 of your post by matching the tags.
 
-- **Recommended Posts**: You can add `recommend-post`s for your blog post in hyperlink format ([example](https://raw.githubusercontent.com/ayan-b/blog/master/_posts/2018-08-25-The-Internet.markdown)).
+- **Recommended Posts**: You can add `recommended-post`s for your blog post in hyperlink format ([example](https://raw.githubusercontent.com/ayan-b/blog/master/_posts/2018-08-25-The-Internet.markdown)).
 
 ## TODO
 
