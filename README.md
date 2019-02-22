@@ -26,9 +26,13 @@ of your post by matching the tags.
 
 - **Recommended Posts**: You can add `recommended-post`s for your blog post in hyperlink format ([example](https://raw.githubusercontent.com/ayan-b/blog/master/_posts/2018-08-25-The-Internet.markdown)).
 
+- **Social Share**: All of your posts can be shared in social media sites easily via the social
+buttons provided. Currently supported sites are: FaceBook, Twitter, Google Plus, Reddit and LinkedIn.
+
 ## TODO
 
-- Release as a gem.
+- [ ] Remove Jekyll Minima dependency
+- [ ] Release as a gem.
 
 ## Contributing
 
