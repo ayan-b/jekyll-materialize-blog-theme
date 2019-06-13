@@ -28,7 +28,7 @@ hr {
 }
 
 a { 
-    color: inherit; 
+
 } 
 
 .time_published {
@@ -87,4 +87,8 @@ a {
 .svg-icon{
     width: 21px;
     height: 16px;
+}
+
+li {
+    list-style-type: circle !important
 }
