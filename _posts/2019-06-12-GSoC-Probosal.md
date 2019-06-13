@@ -5,9 +5,10 @@ categories: top_posts
 author: "Ayan Banerjee"
 tags: blog
 permalink: "GSoC19-Proposal"
+intro_pic: "https://developers.google.com/open-source/gsoc/resources/downloads/GSoC-icon-192.png"
 ---
 
-# Table of Contents
+## Table of Contents
 
 - [Project: Update GDC Data on Xena](#project-update-gdc-data-on-xena)
   * [Project Proposal](#project-proposal)
@@ -32,13 +33,13 @@ permalink: "GSoC19-Proposal"
     + [How many hours per week do you have for a summer project?](#how-many-hours-per-week-do-you-have-for-a-summer-project)
 
 
-# Project: Update GDC Data on Xena
+## Project: Update GDC Data on Xena
 
-## Project Proposal
+### Project Proposal
 
-- ### A high-level description of what you plan to work on
+- #### A high-level description of what you plan to work on
 
-  UCSC Xena is a functional genomics visualization and analysis platform. For this (genomics visualization and analysis),
+  UCSC Xena is a functional genomics visualization and analysis platform. Forthis (genomics visualization and analysis),
   there are many datasets which are provided by data hubs available with Xenabrowser itself which users can use. The data
   hubs are: _UCSC Public Hub_, _TCGA Hub_, _Pan-Cancer Atlas Hub_, _ICGC Hub_, _UCSC Toil RNAseq Recompute_, _Treehouse Hub_
   and _GDC Hub_. Our discussion of interest lies in the GDC Hub.
@@ -51,7 +52,7 @@ permalink: "GSoC19-Proposal"
 
 
 
--  ### Specific details, key aspects and anticipated challenges
+-  #### Specific details, key aspects and anticipated challenges
 
    The process involves two high-level goals:
 
@@ -60,16 +61,16 @@ permalink: "GSoC19-Proposal"
 
 
 
-- ### Tell us what research into this project you have done
+- #### Tell us what research into this project you have done
 
     *   I have analyzed the gdc module of the `xena-GDC-ETL` package and added tests for the same. The module currently has 82% test coverage. In my analysis, I have found that the code and APIs used in the module are updated with the upstream.
     *   During my contributions to the repo, I got sound knowledge on the modules and what task each of them performs.
 
 
 
-- ### Break the project down into smaller tasks
+- #### Break the project down into smaller tasks
 	
-  #### Phase 1 (Week 1-4):
+  ##### Phase 1 (Week 1-4):
 
   -  Improve the overall project in this phase, _i.e._ adding tests, fixing lint issues, improving CLI and setting up
   doctests for existing ones and release the project to pypi.
@@ -77,16 +78,16 @@ permalink: "GSoC19-Proposal"
   -  Start adding code for the new data provided by GDC API. The package should be able to fetch and upload
   FM Simple Somatic Mutation data by the end of this period.
 
-  #### Phase 2 (Week 5-7):
+  ##### Phase 2 (Week 5-7):
 
   -  Add and upload GISTIC - Copy Number Score, DNAcopy data and Star - Counts data into xena and document the process.
 
-  #### Phase 3 (Week 8-11): 
+  ##### Phase 3 (Week 8-11): 
 
   -  Finish uploading the data into xena, add docs and doctests.
 
 
-### Timeline
+#### Timeline
 
 This week-by-week timeline provides a rough guideline of how the project will be done.
 
@@ -319,7 +320,8 @@ This week-by-week timeline provides a rough guideline of how the project will be
 
 
 
-## Personal Background
+
+### Personal Background
 
 
 *   **Name**: Ayan Banerjee
@@ -365,15 +367,15 @@ This week-by-week timeline provides a rough guideline of how the project will be
         *   Wrote an elaborate test suite for the same.
 
 
-## Relevant Skills
+### Relevant Skills
 
-### What are your languages of choice and how do they relate to the project?
+#### What are your languages of choice and how do they relate to the project?
    **Python**: Since the current data wrangler is completely written in Python, naturally The language of choice for this
    project is **Python**. Some **shell** scripting may be required for automating stuff (tests, linting, etc.).
    Some other technology requirements are **Git** (for version control), **Jinja2**(for templating), **CI**(Continuous Integration) and writing docs using **Sphinx**.
 
 
-### Any prior experience with open source development?
+#### Any prior experience with open source development?
 
 
 *   I have been a core developer at the organization **moremoban** for the last 4 months. I am mainly involved with the
@@ -392,37 +394,39 @@ This week-by-week timeline provides a rough guideline of how the project will be
 *   I have also developed some personal projects, mostly in Python and Vanilla JavaScript, all of those are open-sourced
     and can be found in my GitHub and GitLab profile.
 
-###  Please point us to a code sample you have written.
+####  Please point us to a code sample you have written.
 My contributions to the project can be taken as code samples as well as the projects I contributed mentioned previously:
 
 -   Commits: [https://github.com/yunhailuo/xena-GDC-ETL/commits?author=ayan-b](https://github.com/yunhailuo/xena-GDC-ETL/commits?author=ayan-b)
 -   PRs: [https://github.com/yunhailuo/xena-GDC-ETL/pulls?q=is%3Apr+author%3Aayan-b](https://github.com/yunhailuo/xena-GDC-ETL/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Aayan-b)
 -   Reviews: [https://github.com/yunhailuo/xena-GDC-ETL/pulls?q=is%3Apr+reviewed-by%3Aayan-b](https://github.com/yunhailuo/xena-GDC-ETL/pulls?q=is%3Apr+reviewed-by%3Aayan-b) 
   
-###   Any prior experience in bioinformatics or cancer genomics?
+####   Any prior experience in bioinformatics or cancer genomics?
 
   I have high-school level knowledge of genomics and am familiar with the basics of it. Also, I am familiar with the commonly
   used terms related to Genomics.
 
 
-## Your Availability
+### Your Availability
 
 
-###   Do you have any school-related activities scheduled during the coding period?
+####   Do you have any school-related activities scheduled during the coding period?
 
   Summer vacation at my university starts from first week of May and ends on the second week of July. So, from second week of
   July, I will be at my university and will continue coding there.
 
-### Do you have a full- or part-time job or internship planned for this summer?
+#### Do you have a full- or part-time job or internship planned for this summer?
 
   No.
 
-### Any other plans during the coding period that might impact what hours or days you can work?
+#### Any other plans during the coding period that might impact what hours or days you can work?
 
   No.
 
-### How many hours per week do you have for a summer project?
+#### How many hours per week do you have for a summer project?
 
   Since I can do this project full-time, I will be able to devote 50-60 hrs per week for the same.
   Once my university starts in mid-july, I will be able to give 3-4 hrs per day during weekdays
   and 8-10 hrs per day during weekends.
+
+<script src="https://gist.github.com/ayan-b/25c78a26edcfa689be848cd703850652.js"></script>
