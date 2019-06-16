@@ -41,5 +41,8 @@
    {% if page.related-posts %}
        {% include related-posts.html %}
    {% endif %}
+   {% if site.disqus_short_name %}
+       {% include disqus.html %}
+   {% endif %}
 </div>
 {% include footer.html %}
