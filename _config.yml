@@ -34,6 +34,9 @@ kramdown:
 # Google Analytics
 gtag_id: "UA-120952687-1"
 
+# disqus
+disqus_short_name: "ayanb"
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
