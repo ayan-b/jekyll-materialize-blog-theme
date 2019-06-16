@@ -25,7 +25,7 @@
   <h4 class="header" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">All Posts</h3>
   <hr>
     {% for post in site.posts %}
-    <a href = "{{ post.url | relative_url }}">
+    <a class="no-decoration" href = "{{ post.url | relative_url }}">
       <div class="row">
         <div class="col l9">
           <header class="time_published">

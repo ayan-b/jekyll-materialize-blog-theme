@@ -88,3 +88,7 @@ a {
     width: 21px;
     height: 16px;
 }
+
+.no-decoration {
+    text-decoration: none
+}
