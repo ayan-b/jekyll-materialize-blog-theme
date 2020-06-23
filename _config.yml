@@ -35,7 +35,10 @@ kramdown:
 gtag_id: "UA-120952687-1"
 
 # disqus
-disqus_short_name: "ayanb"
+# disqus_short_name: "ayanb"
+
+# telegram comments
+telegram_site_id: "4Uodw-ei"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

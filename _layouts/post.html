@@ -44,5 +44,8 @@
    {% if site.disqus_short_name %}
        {% include disqus.html %}
    {% endif %}
+   {% if site.telegram_site_id %}
+       {% include telegram.html %}
+   {% endif %}
 </div>
 {% include footer.html %}
