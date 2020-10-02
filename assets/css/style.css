@@ -13,6 +13,8 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+
+    cursor: default;    /*  Added cursor property to get the default cursor pointer instead of 'I' */
 }
 
 main{
@@ -80,8 +82,9 @@ a {
 }
 
 .small-image{
-    height: 105.75;
+    height: auto;       /*   Changed height to auto   */
     width: auto;
+    border-radius: 10%;   /*  rounded borders */
 }
 
 .svg-icon{
