@@ -1,4 +1,4 @@
-# blog
+## Blog
 > A jekyll site.
 
 This is a wrapper on the jekyll minima theme. You can use it by cloning the repo.
@@ -19,7 +19,7 @@ matter of your post ([example](https://raw.githubusercontent.com/ayan-b/blog/mas
 inside the `tag` directory.
 
 - **Intro Pic**: You can also add a picture for your post and it will be shown on the top of your
-post and in the home page. Simply add the link of the picture in the front mattter.
+post and in the home page. Simply add the link of the picture in the front matter.
 
 - **Related Posts**: If you set `related-post` as true, some posts will be mentioned at the bottom 
 of your post by matching the tags.
@@ -29,7 +29,7 @@ of your post by matching the tags.
 - **Social Share**: All of your posts can be shared in social media sites easily via the social
 buttons provided. Currently supported sites are: FaceBook, Twitter, Google Plus, Reddit and LinkedIn.
 
-## TODO
+## To Do
 
 - [ ] Remove Jekyll Minima dependency
 - [ ] Release as a gem.
